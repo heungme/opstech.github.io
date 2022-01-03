@@ -67,7 +67,7 @@
 
 
 
-<link rel="stylesheet" href="/scss/component/contact.65fe5533eb41502afd73b718d8edae0b612717550e72dbdba0199da81131390d.css" integrity="sha256-Zf5VM&#43;tBUCr9c7cY2O2uC2EnF1UOctvboBmdqBExOQ0=" crossorigin="anonymous">
+<link rel="stylesheet" href="/scss/component/contact.9800f6e72eb592d35dec145f722948edb4c4e8cbab0154cb5a0e9847a0ab0919.css" integrity="sha256-mAD25y61ktNd7BRfcilI7bTE6MurAVTLWg6YR6CrCRk=" crossorigin="anonymous">
 
 
 <div class="container-fluid container-headline">
@@ -91,18 +91,28 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.0606857072767!2d126.87647881572487!3d37.48289427981363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9f671cfc2c61%3A0xb7f304b4c790298a!2z6rCA7IKwQTHtg4Dsm4w!5e0!3m2!1sko!2skr!4v1641210425551!5m2!1sko!2skr" loading="lazy"></iframe>
     </div>
     <div class="col-md-7 form-group">
+      <form class="gform" method="POST" data-email="js_seo@opstech.kr" action="https://script.google.com/macros/s/AKfycbyCiHIPJ4JH6NtcJ4MNlcOG5Lq1obrrqWiLhMg1J1ol8D5FARCf1tROwIbXVONfqqbUuA/exec">
+
       <label for="input-name">성함</label>
-      <input type="text" class="form-control" id="input-name" placeholder="문의하시는 분 성함을 입력해 주세요">  
+      <input type="text" class="form-control" id="input-name" name="name" placeholder="문의하시는 분 성함을 입력해 주세요">  
       <label for="input-email">이메일 주소</label>
-      <input type="email" class="form-control" id="input-email" placeholder="연락받을 이메일 주소를 입력해 주세요 ex) name@example.com">     
+      <input type="email" class="form-control" id="input-email" name="email" placeholder="연락받을 이메일 주소를 입력해 주세요 ex) name@example.com">     
       <label for="input-phone">연락처</label>
-      <input type="text" class="form-control" id="input-phone" placeholder="연락받을 휴대폰 번호를 입력해 주세요 ex) 010-1234-1234">  
+      <input type="text" class="form-control" id="input-phone" name="phone" placeholder="연락받을 휴대폰 번호를 입력해 주세요 ex) 010-1234-1234">  
       <label for="input-body">문의내용</label>
-      <textarea class="form-control" id="input-body" placeholder="문의하실 내용을 자세히 입력해 주세요" rows="8"></textarea>
-      <button type="button" class="send-request">보내기</button>
+      <textarea class="form-control" id="input-body" name="body" placeholder="문의하실 내용을 자세히 입력해 주세요" rows="8"></textarea>
+      <fieldset class="pure-group honeypot-field" style="display: none;">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
+      <button type="submit" class="send-request">보내기</button>
+       </form>
     </div>
   </div>
 </div>
+
+<script data-cfasync="false" src="/js/form-submission-handler.js"></script>
+
 
 
 
@@ -135,4 +145,5 @@
     </div>
   </div>
 </footer>
+
 </html>
