@@ -1,24 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>http://example.org/business/</loc>
-    <lastmod>2021-12-31T08:00:00-13:00</lastmod>
-  </url><url>
-    <loc>http://example.org/</loc>
-    <lastmod>2021-12-31T08:00:00-13:00</lastmod>
-  </url><url>
-    <loc>http://example.org/people/</loc>
-    <lastmod>2021-12-31T08:00:00-13:00</lastmod>
-  </url><url>
-    <loc>http://example.org/contact/</loc>
-    <lastmod>2021-12-31T08:00:00-13:00</lastmod>
-  </url><url>
-    <loc>http://example.org/about/</loc>
-    <lastmod>2021-12-31T08:00:00-13:00</lastmod>
-  </url><url>
-    <loc>http://example.org/categories/</loc>
-  </url><url>
-    <loc>http://example.org/tags/</loc>
-  </url>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	  	  
+
+
+<url>
+   <loc>http://opstech.kr/</loc>
+   <lastmod>2022-01-03T13:15:41+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>1.0000</priority>
+</url>
+<url>
+   <loc>http://opstech.kr/about/</loc>
+   <lastmod>2022-01-03T13:15:41+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>http://opstech.kr/business/</loc>
+   <lastmod>2022-01-03T13:15:41+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>http://opstech.kr/people/</loc>
+   <lastmod>2022-01-03T13:15:41+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>http://opstech.kr/contact/</loc>
+   <lastmod>2022-01-03T13:15:41+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
 </urlset>
