@@ -81,6 +81,10 @@
     var encoded = Object.keys(data).map(function(k) {
         return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
     }).join('&');
+    
+    if (encoded.includes('Honeypot')) {
+      return; 
+    }
     xhr.send(encoded);
     alert("문의해 주셔서 감사합니다. 빠르게 처리 후 남겨주신 연락처로 회신 드리겠습니다.");
   }
